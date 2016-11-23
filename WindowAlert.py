@@ -17,6 +17,7 @@ def bildirim(PencereDurumu):
 
 
 def Pencere_Kontrol():
+    #Nodemcu adresi
     r = requests.get("http://acikproje.com")
     data = r.text
     soup = BeautifulSoup(data, 'html.parser')
